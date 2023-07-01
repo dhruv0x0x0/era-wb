@@ -9,4 +9,4 @@ import Team from './Team';
 import Robots from './Robots';
 import Contact from './Contact'; // done
 
-export { Hero, Navbar, About, Tech, Experience, Projects, Contact, BallCanvas };
+export { Hero, Navbar, About, ourMoto, Sponsors, Tech, Robots, Team, Contact, BallCanvas };
