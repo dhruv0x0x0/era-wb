@@ -31,39 +31,90 @@ import {
 
 export const navLinks = [
   {
-    id: 'about',
-    title: 'About',
+    id: 'recruitment', // does not make sense abhi ...
+    title: 'Recruitment',
   },
   {
-    id: 'projects',
-    title: 'Projects',
+    id: 'home', // will link to the landing page
+    title: 'Home',
   },
   {
-    id: 'contact',
+    id: 'aboutus', // done in file named About.jsx
+    title: 'About Us',
+  },
+  {
+    id: '6e', // done in the ourmoto.jsx file
+    title: '6E',
+  },
+  {
+    id: 'robots', // done in the file named Robots.jsx
+    title: 'Robots',
+  },
+  {
+    id: 'team',
+    title: 'Team', // done in Team.jsx
+  },
+  {
+    id: 'sponsors', // done in sponsors.jsx
+    title: 'Sponsors',
+  },
+  {
+    id: 'contact', // Done in a file named Contact.jsx
     title: 'Contact',
   },
 ];
 
-const services = [
+const motoEs = [
   {
-    title: 'Frontend Developer',
+    title: 'Enthusiasm',
     icon: frontend,
   },
   {
-    title: 'Backend Developer',
+    title: 'Excellence',
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
+    title: 'Eclectic',
     icon: ux,
   },
   {
-    title: 'Software Prototyping',
+    title: 'exceptional',
     icon: prototyping,
+  },{
+    title: 'endeavour',
+    icon: prototyping,
+  },{
+    title: 'evolution',
+    icon: prototyping, // need to add the logos for this !!!
   },
 ];
 
-const technologies = [
+const sponsors = [ // add the sponsors data to this
+  {
+    title: 'Enthusiasm',
+    icon: frontend,
+  },
+  {
+    title: 'Excellence',
+    icon: backend,
+  },
+  {
+    title: 'Eclectic',
+    icon: ux,
+  },
+  {
+    title: 'exceptional',
+    icon: prototyping,
+  },{
+    title: 'endeavour',
+    icon: prototyping,
+  },{
+    title: 'evolution',
+    icon: prototyping, // need to add the logos for this !!!
+  },
+];
+
+const technologies = [ // can be used for social media icons !!!
   {
     name: 'HTML 5',
     icon: html,
@@ -122,30 +173,45 @@ const technologies = [
   },
 ];
 
-const experiences = [
+const experiences = [ // Added the description of each of the E here.
+// edit rest of the fields as per need.
   {
-    title: 'Front-End Developer',
+    title: 'We work in an ever-improving field with breakthroughs and excitement at every turn',
     company_name: 'Cover Hunt',
     icon: coverhunt,
     iconBg: '#333333',
     date: 'Aug 2021 - Feb 2022',
   },
   {
-    title: 'Mentor (Volunteer)',
+    title: 'We always have a mindset to excel and flourish at any challenge thrown at us',
     company_name: 'Microverse',
     icon: microverse,
     iconBg: '#333333',
     date: 'Mar 2022 - May 2022',
   },
   {
-    title: 'Junior Software Engineer',
+    title: 'We are always looking for cutting-edge ideas to learn and draw inspiration',
     company_name: 'Kelhel',
     icon: kelhel,
     iconBg: '#333333',
     date: 'May 2022 - Oct 2022',
   },
   {
-    title: 'Full Stack Developer',
+    title: 'We stand apart from our competition with our work ethics, conduct and deliverables',
+    company_name: 'Diversity Cyber Council',
+    icon: dcc,
+    iconBg: '#333333',
+    date: 'Sep 2022 - Present',
+  },
+  {
+    title: 'We endeavour our goals with persistance and determination and against all odds',
+    company_name: 'Diversity Cyber Council',
+    icon: dcc,
+    iconBg: '#333333',
+    date: 'Sep 2022 - Present',
+  },
+  {
+    title: 'It never ends for us!',
     company_name: 'Diversity Cyber Council',
     icon: dcc,
     iconBg: '#333333',
@@ -153,7 +219,7 @@ const experiences = [
   },
 ];
 
-const projects = [
+const robots = [ // Add the robots data here !!!
   {
     id: 'project-1',
     name: 'KomiKult',
@@ -268,4 +334,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { motoEs, technologies, experiences, projects,sponsors,robots };
