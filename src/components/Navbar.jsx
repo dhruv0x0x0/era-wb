@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { close, menu, logo, logotext } from '../assets';
+import { close, menu, logo, logotext} from '../assets';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -20,10 +21,10 @@ const Navbar = () => {
             setActive('');
             window.scrollTo(0, 0);
           }}>
-          <img
+          <img 
             src={logo} // your logo comes here
             alt="logo"
-            className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
+            className="sm:w-[5.2083333333333vw] sm:h-[5.2083333333333vw] w-[4.6875vw] h-[4.6875vw] object-contain mr-3"
           />
 
           {/* if you have text you want besides your logo it comes here.
@@ -31,21 +32,87 @@ const Navbar = () => {
           <img
             src={logotext}
             alt="logo"
-            className="sm:w-[90px] sm:h-[90px] w-[85px] h-[85px] -ml-[0.6rem] object-contain"
+            className="sm:w-[26.04166666666vw] sm:h-auto w-[4.427083333333vw] h-auto -ml-[0.6rem] object-contain"
           />
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
+        <ul className="list-none hidden sm:flex flex-row gap-4 mt-2">
+        <a
+  href="#hero"
+  className={`${
+    active === 'Home' ? 'text-french' : 'text-eerieBlack'
+  } hover:text-taupe text-[15px] font-medium font-mova uppercase tracking-[3px] cursor-pointer nav-links`}
+  onClick={(e) => {
+    e.preventDefault();
+    setActive('Home');
+    const aboutSection = document.querySelector('#hero');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}
+>
+  Home
+</a>
+        <a
+  href="#about"
+  className={`${
+    active === 'Team' ? 'text-french' : 'text-eerieBlack'
+  } hover:text-taupe text-[15px] font-medium font-mova uppercase tracking-[3px] cursor-pointer nav-links`}
+  onClick={(e) => {
+    e.preventDefault();
+    setActive('Team');
+    const aboutSection = document.querySelector('#about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}
+>
+  Team
+</a>
+<a
+  href="#projects"
+  className={`${
+    active === 'Sponsors' ? 'text-french' : 'text-eerieBlack'
+  } hover:text-taupe text-[15px] font-medium font-mova uppercase tracking-[3px] cursor-pointer nav-links`}
+  onClick={(e) => {
+    e.preventDefault();
+    setActive('Sponsors');
+    const aboutSection = document.querySelector('#projects');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}
+>
+  Sponsors
+</a>
+<a
+  href="#experience"
+  className={`${
+    active === 'Recruitment' ? 'text-french' : 'text-eerieBlack'
+  } hover:text-taupe text-[15px] font-medium font-mova uppercase tracking-[3px] cursor-pointer nav-links`}
+  onClick={(e) => {
+    e.preventDefault();
+    setActive('Recruitment');
+    const aboutSection = document.querySelector('#experience');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}
+>
+  Recruitment
+</a>
+        
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title ? 'text-french' : 'text-eerieBlack'
-              } hover:text-taupe text-[21px] font-medium font-mova 
+              } hover:text-taupe text-[15px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(nav.title)}>
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          
         </ul>
 
         {/* mobile */}

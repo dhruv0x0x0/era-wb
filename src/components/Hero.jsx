@@ -6,7 +6,7 @@ import { shaq, bwmap, worldmap } from '../assets';
 
 const Hero = () => {
   return (
-    <>
+    <section id="hero" className="relative flex sm:flex-row flex-col w-full h-screen mx-auto sm:bg-hero bg-hero-mobile overflow-hidden">
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
         <img
           src={bwmap}
@@ -36,19 +36,54 @@ const Hero = () => {
 
           <div>
             <h1
-              className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}>
-              Hi, I'm{' '}
+              className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase pr-4 sm:pr-6`} style={{ marginLeft: '-60px' }}>
+              Hi, Welcome to {' '}
               <span
-                className="sm:text-battleGray sm:text-[90px] 
-                text-eerieBlack text-[50px] font-mova
-                font-extrabold uppercase">
-                Shaquille
+                className="sm:text-battleGray sm:text-[7vw] 
+                text-eerieBlack text-[7vw] font-mova
+                font-extrabold uppercase"
+                style={{ color: '#6194fb' }}>
+                ERA
               </span>
+                
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              Lorem ipsum dolor sit amet. <br className="sm:block hidden" />
-              consectetur adipisicing elit deleniti, voluptas.
+            <p className={`${styles.heroSubText} mt-2 text-eerieBlack text-centre`}>
+              The Rising Of A New ERA <br className="sm:block hidden" />
+              <br className="sm:block hidden" />
+            <br className="sm:block hidden" />
+            <br className="sm:block hidden" />
+            <ul className="footer-follow" style={{ fontSize: 48, display: 'flex', gap: '20px', marginLeft:'25px' }}>
+  <li>
+    <a href="https://www.facebook.com/eraiitkanpur/" target="_blank">
+      <i className="fa fa-facebook" />
+    </a>
+  </li>
+  <li>
+    <a href="https://www.github.com/ERA-IITK" target="_blank">
+      <i className="fa fa-github" />
+    </a>
+  </li>
+  <li>
+    <a href="mailto:eraiitk@gmail.com">
+      <i className="fa fa-envelope" />
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/company/era-iitk/" target="_blank">
+      <i className="fa fa-linkedin" target="_blank" />
+    </a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/channel/UCaaEga5jSCEN6ph6w9E9TVQ">
+      <i className="fa fa-youtube" target="_blank" />
+    </a>
+  </li>
+</ul>
+            <p className={`mt-2 text eerieBlack text-[1.4vw] items-centre text-centre pl-6`}>
+              Team for Autonomous Robotics
             </p>
+            </p>
+            
           </div>
           <div
             className="w-screen flex flex-col items-start 
@@ -83,15 +118,15 @@ const Hero = () => {
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
         <div>
           <img
-            className="absolute bottom-0 ml-[50vw] 
-            lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
-            sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
+            className="mt-[13vw] ml-[25.5vw] 
+            lg:ml-[52vw] md:ml-[37vw] xmd:ml-[37vw] 2xl:ml-[60vw]
+            sm:h-[80vh] md:h-[60vh] xl:h-[70vh]"
             src={shaq}
             alt="shaquille"
           />
         </div>
       </section>
-    </>
+    </section>
   );
 };
 

@@ -73,6 +73,15 @@
   font-weight: 700;
 }
 
+.footer-follow a i {
+  color: black; /* Set the default color */
+  transition: color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.footer-follow a:hover i {
+  color: #6194fb; /* Set the color for hovering */
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
