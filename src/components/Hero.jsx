@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { shaq, bwmap, worldmap } from '../assets';
+import SocialMenu from './socialMenu';
 
 const Hero = () => {
   return (
@@ -33,7 +34,6 @@ const Hero = () => {
             <div className="w-5 h-5 rounded-full bg-[#0a0a0a] sm:hidden" />
             <div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
           </div>
-
           <div>
             <h1
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase pr-4 sm:pr-6`} style={{ marginLeft: '-60px' }}>
@@ -47,12 +47,15 @@ const Hero = () => {
               </span>
                 
             </h1>
+            <section  className="footer-follow" style={{ fontSize: 48, display: 'flex', gap: '20px', marginLeft:'25px' }}>
+          <SocialMenu />
+          </section>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack text-centre`}>
               The Rising Of A New ERA <br className="sm:block hidden" />
               <br className="sm:block hidden" />
             <br className="sm:block hidden" />
             <br className="sm:block hidden" />
-            <ul className="footer-follow" style={{ fontSize: 48, display: 'flex', gap: '20px', marginLeft:'25px' }}>
+            {/* <ul className="footer-follow" style={{ fontSize: 48, display: 'flex', gap: '20px', marginLeft:'25px' }}>
   <li>
     <a href="https://www.facebook.com/eraiitkanpur/" target="_blank">
       <i className="fa fa-facebook" />
@@ -78,7 +81,8 @@ const Hero = () => {
       <i className="fa fa-youtube" target="_blank" />
     </a>
   </li>
-</ul>
+</ul> */}
+
             <p className={`mt-2 text eerieBlack text-[1.4vw] items-centre text-centre pl-6`}>
               Team for Autonomous Robotics
             </p>
