@@ -9,10 +9,10 @@ import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 const ProjectCard = ({
   id,
   name,
+  Sponsor_logo,
   description,
   image,
-  repo,
-  demo,
+  link,
   index,
   active,
   handleClick,
@@ -52,12 +52,12 @@ const ProjectCard = ({
             flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
             <div className="absolute inset-0 flex justify-end m-3">
               <div
-                onClick={() => window.open(repo, '_blank')}
+                onClick={() => window.open(link, '_blank')}
                 className="bg-night sm:w-11 sm:h-11 w-10 h-10 rounded-full 
                   flex justify-center items-center cursor-pointer
                   sm:opacity-[0.9] opacity-[0.8]">
                 <img
-                  src={github}
+                  src={Sponsor_logo}
                   alt="source code"
                   className="w-4/5 h-4/5 object-contain"
                 />
@@ -84,7 +84,7 @@ const ProjectCard = ({
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
-              onClick={() => window.open(demo, '_blank')}
+              onClick={() => window.open(link, '_blank')}
               onMouseOver={() => {
                 document
                   .querySelector('.btn-icon')
@@ -101,7 +101,7 @@ const ProjectCard = ({
                 className="btn-icon sm:w-[34px] sm:h-[34px] 
                   w-[30px] h-[30px] object-contain"
               />
-              LIVE DEMO
+              Discover
             </button>
           </div>
         </>
@@ -116,20 +116,21 @@ const Projects = () => {
   return (
     <div id='projects' className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>Case Studies</p>
-        <h2 className={`${styles.sectionHeadTextLight}`}>Projects.</h2>
-      </motion.div>
+        <p className={`${styles.sectionSubText} `}>Why Us</p>
+      <h2 className={`${styles.sectionHeadTextLight}`}>Our Sponsors</h2>
 
-      <div className="w-full flex">
+        <div className="w-full flex">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-          These projects demonstrate our expertise with practical examples of
-          some of our work, including brief descriptions and links to videos and live demos. They showcase our ability to tackle
-          intricate challenges, adapt to various technologies, and efficiently
-          oversee projects.
+          Gain exposure through competitions, media, and online platforms. 
+          Access a pool of top-tier talents specializing in robotics, AI, and more. 
+          Empower future leaders while showcasing your industry leadership. 
+          Join us in reshaping tomorrow's technology, partner with TEAM ERA now.
         </motion.p>
       </div>
+      
+      </motion.div>
 
       <motion.div
         variants={staggerContainer}
@@ -149,6 +150,8 @@ const Projects = () => {
           ))}
         </div>
       </motion.div>
+
+       
     </div>
   );
 };

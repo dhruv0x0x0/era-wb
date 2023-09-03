@@ -55,33 +55,7 @@ const Hero = () => {
               <br className="sm:block hidden" />
             <br className="sm:block hidden" />
             <br className="sm:block hidden" />
-            {/* <ul className="footer-follow" style={{ fontSize: 48, display: 'flex', gap: '20px', marginLeft:'25px' }}>
-  <li>
-    <a href="https://www.facebook.com/eraiitkanpur/" target="_blank">
-      <i className="fa fa-facebook" />
-    </a>
-  </li>
-  <li>
-    <a href="https://www.github.com/ERA-IITK" target="_blank">
-      <i className="fa fa-github" />
-    </a>
-  </li>
-  <li>
-    <a href="mailto:eraiitk@gmail.com">
-      <i className="fa fa-envelope" />
-    </a>
-  </li>
-  <li>
-    <a href="https://www.linkedin.com/company/era-iitk/" target="_blank">
-      <i className="fa fa-linkedin" target="_blank" />
-    </a>
-  </li>
-  <li>
-    <a href="https://www.youtube.com/channel/UCaaEga5jSCEN6ph6w9E9TVQ">
-      <i className="fa fa-youtube" target="_blank" />
-    </a>
-  </li>
-</ul> */}
+
 
             <p className={`mt-2 text eerieBlack text-[1.4vw] items-centre text-centre pl-6`}>
               Team for Autonomous Robotics
