@@ -114,8 +114,39 @@ const Projects = () => {
   const [active, setActive] = useState('project-2');
 
   return (
+    <>
+    {/* Projects Section */}
     <div id='projects' className="-mt-[6rem]">
-      <motion.div variants={textVariant()}>
+        <motion.div variants={textVariant()}>
+          <p className={`${styles.sectionSubText} `}>Accomplishments</p>
+          <h2 className={`${styles.sectionHeadTextLight}`}>Projects.</h2>
+        </motion.div>
+
+        {/* Rest of your Projects section code */}
+        {/* Use projectData for mapping */}
+        <div className="w-full flex">
+          {/* Your project descriptions */}
+        </div>
+
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className={`${styles.innerWidth} mx-auto flex flex-col`}>
+          <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+            {projects.slice(0,5).map((project, index) => (
+              <ProjectCard
+                key={project.id}
+                index={index}
+                {...project}
+                active={active}
+                handleClick={setActive}
+              />
+            ))}
+          </div>
+          <div id='projects' className="-mt-[6rem]">
+<motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>Why Us</p>
       <h2 className={`${styles.sectionHeadTextLight}`}>Our Sponsors</h2>
 
@@ -132,28 +163,30 @@ const Projects = () => {
       
       </motion.div>
 
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}>
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={project.id}
-              index={index}
-              {...project}
-              active={active}
-              handleClick={setActive}
-            />
-          ))}
-        </div>
-      </motion.div>
-
-       
+  <motion.div
+    variants={staggerContainer}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: false, amount: 0.25 }}
+    className={`${styles.innerWidth} mx-auto flex flex-col`}>
+    <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+      {projects.slice(5, 8).map((project, index) => (
+        <ProjectCard
+          key={project.id}
+          index={index}
+          {...project}
+          active={active}
+          handleClick={setActive}
+        />
+      ))}
     </div>
+  </motion.div>
+  </div>
+        </motion.div>
+    </div>
+    </>
   );
 };
 
 export default SectionWrapper(Projects, 'projects');
+

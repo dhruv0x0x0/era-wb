@@ -5,8 +5,16 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { send, sendHover } from '../assets';
+import React,{ useEffect } from 'react';
 
 const Contact = () => {
+
+  useEffect(() => {
+    // Widget initialization code here (if required)
+  }, []); // Empty dependency array ensures the effect runs once
+
+  <div className="elfsight-app-bcdddf16-aa00-448f-8745-fb6762e5b41d"></div>
+  
   const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
@@ -33,9 +41,9 @@ const Contact = () => {
         'templateID', // paste your TemplateID here (you'll find it under email templates).
         {
           from_name: form.name,
-          to_name: 'YourName', // put your name here.
+          to_name: 'ERA IITK', // put your name here.
           from_email: form.email,
-          to_email: 'youremail@gmail.com', //put your email here.
+          to_email: 'eraiitk@gmail.com', //put your email here.
           message: form.message,
         },
         'yourpublickey' //paste your Public Key here. You'll get it in your profile section.
@@ -60,7 +68,11 @@ const Contact = () => {
   };
 
   return (
+    <>
+    <div class="elfsight-app-bcdddf16-aa00-448f-8745-fb6762e5b41d"></div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     <div
+        
       className="-mt-[8rem] xl:flex-row flex-col-reverse 
       flex gap-10 overflow-hidden">
       <motion.div
@@ -146,6 +158,7 @@ const Contact = () => {
         </form>
       </motion.div>
     </div>
+    </>
   );
 };
 

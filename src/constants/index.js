@@ -33,6 +33,7 @@ import {
   ansys_logo,
   snt_bg,
   snt_logo,
+  github,
 } from '../assets';
 
 export const navLinks = [
@@ -162,9 +163,103 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'Noccarc',
-    Sponsor_logo: noccarc_logo,
-    description: 'Innovating At Every Step To Drive Advanced Technologies',
+    name: 'EXCAVATOR',
+    Sponsor_logo: github,
+    description: 'Developing an autonomous excavator for remote operation and enhanced safety through integrated sensors. Funded at 11,13,500 Rs',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: math,
+    repo: 'https://surge.iitk.ac.in/AnnualReport/report2021.pdf',
+    demo: 'https://github.com/ERA-IITK',
+  },
+  {
+    id: 'project-2',
+    name: 'Competitions',
+    Sponsor_logo: github,
+    description:
+      'ERA excels in the renowned RoboMaster AI Challenge, emphasizing autonomous robot design and strategy. We are also dedicated to RoboCup, specializing in mechatronics, control systems, and autonomous soccer-playing robots.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'restapi',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'scss',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: leaderboard,
+    repo: 'https://github.com/ERA-IITK/Robomaster-AI-Challenge-2020',
+    demo: 'https://github.com/ERA-IITK',
+  },
+  {
+    id: 'project-3',
+    name: 'ICRA 2022',
+    Sponsor_logo: github,
+    description:
+        'Recognition: Our Technical Proposal Ranked in the Top 5 and Technical Poster Accepted',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: nyeusi,
+    repo: 'https://github.com/ERA-IITK/ICRA_ai_challenge',
+    demo: 'https://github.com/ERA-IITK',
+  },
+  {
+    id: 'project-4',
+    name: 'BIRAC WC',
+    Sponsor_logo: github,
+    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: movie,
+    repo: 'https://github.com/shaqdeff/Movie-Metro',
+    demo: 'https://github.com/ERA-IITK',
+  },
+  {
+    id: 'project-5',
+    name: 'DEXTER',
+    Sponsor_logo: github,
+    description: 'A comic characters list app that displays Marvel characters.',
     tags: [
       {
         name: 'react',
@@ -179,12 +274,36 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
+    image: komikult,
+    repo: 'https://github.com/ERA-IITK/Dexter',
+    demo: 'https://github.com/ERA-IITK',
+  },
+  {
+    id: 'project-6',
+    Sponsor_logo: github,
+    name: 'Noccarc',
+    Sponsor_logo: noccarc_logo,
+    description: 'Innovating At Every Step To Drive Advanced Technologies',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
     image: noccarc_bg,
     link: 'https://www.noccarc.com/',
     link: 'https://www.noccarc.com/',
   },
   {
-    id: 'project-2',
+    id: 'project-7',
     name: 'SNT IITK',
     Sponsor_logo: snt_logo,
     description: 
@@ -208,7 +327,7 @@ const projects = [
     link: 'https://sntiitk.com/',
   },
   {
-    id: 'project-3',
+    id: 'project-8',
     name: 'Ansys',
     Sponsor_logo: ansys_logo,
     description: 'Powering Innovation That Drives Human Advancement',

@@ -95,12 +95,12 @@ const Hero = () => {
 
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
         <div>
-          <img
-            className="mt-[13vw] ml-[25.5vw] 
-            lg:ml-[52vw] md:ml-[37vw] xmd:ml-[37vw] 2xl:ml-[60vw]
+        <img
+            className="mt-[16vw] ml-[25.5vw] 
+            lg:ml-[44vw] md:ml-[33vw] xmd:ml-[33vw] 2xl:ml-[52vw]
             sm:h-[80vh] md:h-[60vh] xl:h-[70vh]"
             src={shaq}
-            alt="shaquille"
+            alt="ROBO"
           />
         </div>
       </section>
