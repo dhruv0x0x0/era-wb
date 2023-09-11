@@ -27,6 +27,12 @@ import {
   dcc,
   kelhel,
   microverse,
+  noccarc_logo,
+  noccarc_bg,
+  ansys_bg,
+  ansys_logo,
+  snt_bg,
+  snt_logo,
 } from '../assets';
 
 export const navLinks = [
@@ -156,8 +162,9 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'Noccarc',
+    Sponsor_logo: noccarc_logo,
+    description: 'Innovating At Every Step To Drive Advanced Technologies',
     tags: [
       {
         name: 'react',
@@ -172,15 +179,16 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    image: noccarc_bg,
+    link: 'https://www.noccarc.com/',
+    link: 'https://www.noccarc.com/',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
-    description:
-      'A leaderboard list app that displays scores submitted by different players.',
+    name: 'SNT IITK',
+    Sponsor_logo: snt_logo,
+    description: 
+      " Science And Technology Council, IIT Kanpur",
     tags: [
       {
         name: 'react',
@@ -195,14 +203,15 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    image: snt_bg,
+    link: 'https://sntiitk.com/',
+    link: 'https://sntiitk.com/',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'Ansys',
+    Sponsor_logo: ansys_logo,
+    description: 'Powering Innovation That Drives Human Advancement',
     tags: [
       {
         name: 'nextjs',
@@ -217,55 +226,57 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    image: ansys_bg,
+    link: 'https://www.ansys.com/en-in',
+    link: 'https://www.ansys.com/en-in',
   },
-  {
-    id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
-  },
+  // {
+  //   id: 'project-4',
+  //   name: 'Movie Metro',
+  //   Sponsor_logo: noccarc_logo,
+  //   description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+  //   tags: [
+  //     {
+  //       name: 'nextjs',
+  //       color: 'blue-text-gradient',
+  //     },
+  //     {
+  //       name: 'supabase',
+  //       color: 'green-text-gradient',
+  //     },
+  //     {
+  //       name: 'css',
+  //       color: 'pink-text-gradient',
+  //     },
+  //   ],
+  //   image: movie,
+  //   link: 'https://github.com/shaqdeff/Movie-Metro',
+  //   link: 'https://movie-metro.netlify.app/',
+  // },
+  // {
+  //   id: 'project-5',
+  //   name: 'Nyeusi Fest Site',
+  //   Sponsor_logo: noccarc_logo,
+  //   description:
+  //     'This is a link concert website for a music festival called Nyeusi.',
+  //   tags: [
+  //     {
+  //       name: 'nextjs',
+  //       color: 'blue-text-gradient',
+  //     },
+  //     {
+  //       name: 'supabase',
+  //       color: 'green-text-gradient',
+  //     },
+  //     {
+  //       name: 'css',
+  //       color: 'pink-text-gradient',
+  //     },
+  //   ],
+  //   image: nyeusi,
+  //   link: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
+  //   link: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+  // },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, projects , technologies, experiences,  };

@@ -44,6 +44,15 @@ import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
 
 import komikult from './projects/komikult.png';
+import noccarc_logo from './projects/noccarc_logo.png';
+import noccarc_bg from './projects/noccarc_bg.png';
+import ansys_logo from './projects/ansys_logo.png';
+import ansys_bg from './projects/ansys_bg.png';
+import snt_logo from './projects/snt_logo.png';
+import snt_bg from './projects/snt_bg.jpeg';
+
+
+
 import leaderboard from './projects/leaderboard.png';
 import math from './projects/math-magicians.png';
 import movie from './projects/movie-metro.png';
@@ -96,4 +105,10 @@ export {
   dcc,
   kelhel,
   microverse,
+  noccarc_logo,
+  noccarc_bg,
+  ansys_bg,
+  ansys_logo,
+  snt_logo,
+  snt_bg,
 };

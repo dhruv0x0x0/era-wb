@@ -9,10 +9,11 @@ const Tech = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubTextLight}>Sponsorship</p>
-        <h2 className={styles.sectionHeadTextLight}>Our Sponsors</h2>
+        <p className={styles.sectionSubTextLight}>Technologies</p>
+        <h2 className={styles.sectionHeadTextLight}>Our TechStack</h2>
       </motion.div>
 
+      
       <div className="flex flex-wrap justify-center gap-10 mt-14">
         {technologies.map((technology) => (
           <a href= "https://www.youtube.com" ><div className="w-28 h-28" key={technology.name}>
@@ -20,6 +21,9 @@ const Tech = () => {
           </div></a>
         ))}
       </div>
+      
+      
+
     </>
   );
 };
