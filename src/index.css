@@ -51,7 +51,12 @@
   width: 70%;
 }
 
-#about {
+#whoweare {
+  margin-left: -24px;
+  font-size: 100px;
+}
+
+#robocup {
   margin-left: -24px;
   font-size: 100px;
 }

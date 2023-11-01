@@ -1,12 +1,13 @@
 import { BrowserRouter } from 'react-router-dom';
 import {
-  About,
+  WhoWeAre,
   Contact,
   Experience,
   Hero,
   Navbar,
   Tech,
   Projects,
+  RoboCup,
 } from './components';
 
 const App = () => {
@@ -19,12 +20,15 @@ const App = () => {
         </div>
 
         <div className="bg-about bg-cover bg-center bg-no-repeat">
-          <About />
+          <WhoWeAre />
         </div>
+         <div className="bg-tech bg-cover bg-center bg-no-repeat">
+          <RoboCup />
+        </div> 
        
-        <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
+        {/* <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
           <Tech />
-        </div>
+        </div> */}
         <Projects />
         
         <div
